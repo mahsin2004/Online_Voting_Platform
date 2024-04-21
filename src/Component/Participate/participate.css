@@ -1,0 +1,18 @@
+
+form button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border: 1.5px solid #a892fe;
+    border-radius: 0.6rem;
+    background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+    padding: 0.7rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+form button:hover{
+    color: #a892fe;
+    background: transparent;
+}

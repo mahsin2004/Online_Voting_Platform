@@ -1,0 +1,28 @@
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ .footer-right {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+     .footer-right {
+      flex-basis: 30%;
+    }
+  }
+  
+
+  

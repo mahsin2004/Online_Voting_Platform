@@ -1,0 +1,8 @@
+.conatiner{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.active{
+    background: white;
+    color: black;
+}

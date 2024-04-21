@@ -1,0 +1,49 @@
+.link{
+    display: flex;
+    gap: 10px;
+}
+.menu{
+    display: none;
+}
+.mobileDevice{
+    display: none;
+    z-index: 3;
+}
+
+@media (max-width:640px) {
+    .link{
+        display: none;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+
+    }
+    .mobileDevice{
+        position: absolute;
+        top: 100; 
+        right: 0;
+        height: calc(100% - 50px); 
+        width: 50%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
+        animation: slideIn 1.5s ease;
+         
+    }
+    
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    
+}

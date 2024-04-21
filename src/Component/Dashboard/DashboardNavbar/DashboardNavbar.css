@@ -1,0 +1,72 @@
+.notification {
+    font-size: 14px;
+  }
+  .notifications {
+    position: absolute;
+    z-index: 2;
+    top: 37.5px;
+    width: 260px;
+    max-height: 450px;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .notifications {
+      right: -67px; /* Adjust as necessary */
+    }
+  }
+  /* Custom CSS for scrollbar */
+.notifications::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.notifications::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175); /* Color of the thumb */
+  border-radius: 3px; /* Border radius of the thumb */
+}
+
+.notifications::-webkit-scrollbar-track {
+  background-color: rgba(209, 213, 219);
+  border-radius: 100px; /* Color of the track */
+}
+
+.dropdown-menus{
+  position: absolute;
+  top: 77px;
+  right: 0px;
+  background-color: #111827;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  height: 700px;
+  width: 300px;
+}
+.dropdown-menus::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right:20px;
+  height: 50px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(46deg);
+}
+
+.dropdown-menus.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menus.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed)ease;
+}
